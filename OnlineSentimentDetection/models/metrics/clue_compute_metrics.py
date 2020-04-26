@@ -45,7 +45,9 @@ def compute_metrics(task_name, preds, labels):
         return {"acc": simple_accuracy(preds, labels)}
     elif task_name == "tnews":
         return {"acc": simple_accuracy(preds, labels)}
-    elif task_name == "sentiment":
+    elif task_name == "movie":
+        return {"acc": simple_accuracy(preds, labels)}
+    elif task_name == "restaurant":
         return {"acc": simple_accuracy(preds, labels)}
     elif task_name == "afqmc":
         return {"acc": simple_accuracy(preds, labels)}

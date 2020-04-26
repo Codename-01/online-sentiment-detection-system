@@ -228,7 +228,8 @@ def predict(args, model, tokenizer, label_list, prefix=""):
         if not os.path.exists(pred_output_dir) and args.local_rank in [-1, 0]:
             os.makedirs(pred_output_dir)
 
-        args.pred_batch_size = args.per_gpu_eval_batch_size * max(1, args.n_gpu)
+        # args.pred_batch_size = args.per_gpu_eval_batch_size * max(1, args.n_gpu)
+        args.pred_batch_size = 16
         # Note that DistributedSampler samples randomly
         pred_sampler = SequentialSampler(pred_dataset) if args.local_rank == -1 else DistributedSampler(pred_dataset)
         pred_dataloader = DataLoader(pred_dataset, sampler=pred_sampler, batch_size=args.pred_batch_size,
@@ -332,7 +333,7 @@ def load_and_cache_examples(args, task, tokenizer, data_type='train'):
                                                 pad_token=tokenizer.convert_tokens_to_ids([tokenizer.pad_token])[0],
                                                 pad_token_segment_id=4 if args.model_type in ['xlnet'] else 0,
                                                 )
-        if args.local_rank in [-1, 0]:
+        if args.local_rank in [-1, 0] and data_type!='test':
             logger.info("Saving features into cached file %s", cached_features_file)
             torch.save(features, cached_features_file)
 

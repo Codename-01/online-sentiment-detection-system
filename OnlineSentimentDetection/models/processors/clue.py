@@ -487,7 +487,8 @@ clue_tasks_num_labels = {
     'wsc': 2,
     'copa': 2,
     'tnews': 15,
-    'sentiment': 6,
+    'restaurant': 5,
+    'movie': 5,
 }
 
 clue_processors = {
@@ -498,7 +499,8 @@ clue_processors = {
     'csl': CslProcessor,
     'wsc': WscProcessor,
     'copa': CopaProcessor,
-    'sentiment':SentimentProcessor,
+    'restaurant':SentimentProcessor,
+    'movie':SentimentProcessor,
 }
 
 clue_output_modes = {
@@ -509,5 +511,6 @@ clue_output_modes = {
     'csl': "classification",
     'wsc': "classification",
     'copa': "classification",
-    'sentiment': "classification",
+    'restaurant': "classification",
+    'movie': "classification",
 }

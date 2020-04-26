@@ -2,10 +2,20 @@ import pandas as pd
 import json
 from collections import defaultdict
 
-dataset = pd.read_csv("ratings.csv")
+## 火锅店数据的处理需要取消注释下面几行
+# dataset = pd.read_csv("ratings.csv")
+# clean_set = dataset.dropna()
+# clean_set = clean_set.sample(200000)
+# clean_set = clean_set[['comment','rating']]
+
+## 不是豆瓣的数据需要注释掉下面几行
+dataset = pd.read_csv('./movie_comment_new.csv',encoding='gb18030',lineterminator="\n")
 clean_set = dataset.dropna()
-clean_set = clean_set.sample(200000)
-clean_set = clean_set[['comment','rating']]
+clean_set = dataset[['comment','star']]
+clean_set = clean_set[~(clean_set['comment'].isnull())]
+clean_set = clean_set.rename(columns={'star':'rating'})
+
+## 分割数据集并存为json格式
 clean_set['rating'] = clean_set['rating'].astype(int).astype(str)
 del dataset
 train_dev = clean_set.sample((int(len(clean_set)*0.9)))
