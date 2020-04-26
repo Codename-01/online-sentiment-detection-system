@@ -2,7 +2,7 @@
   "attention_probs_dropout_prob": 0.0,
   "directionality": "bidi",
   "embedding_size": 128,
-  "finetuning_task": "sentiment",
+  "finetuning_task": "restaurant",
   "hidden_act": "gelu",
   "hidden_dropout_prob": 0.0,
   "hidden_size": 312,
