@@ -4,8 +4,8 @@
 # @Last Modified by:   bo.shi
 # @Last Modified time: 2020-01-01 11:46:07
 
-TASK_NAME="restaurant"
-MODEL_NAME="albert_restaurant"
+TASK_NAME="movie"
+MODEL_NAME="albert_tiny_prev"
 CURRENT_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 export CUDA_VISIBLE_DEVICES="0"
 export BERT_PRETRAINED_MODELS_DIR=$CURRENT_DIR/prev_trained_model
@@ -49,12 +49,12 @@ if [ $# == 0 ]; then
       --do_lower_case \
       --data_dir=$GLUE_DATA_DIR/${TASK_NAME}/ \
       --max_seq_length=128 \
-      --per_gpu_train_batch_size=16 \
-      --per_gpu_eval_batch_size=16 \
-      --learning_rate=1e-3 \
-      --num_train_epochs=1 \
-      --logging_steps=3335 \
-      --save_steps=3335 \
+      --per_gpu_train_batch_size=32 \
+      --per_gpu_eval_batch_size=32 \
+      --learning_rate=2e-5 \
+      --num_train_epochs=3 \
+      --logging_steps=1000 \
+      --save_steps=1000 \
       --output_dir=$CURRENT_DIR/${TASK_NAME}_output/ \
       --overwrite_output_dir \
       --seed=42

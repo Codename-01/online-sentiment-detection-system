@@ -43,6 +43,10 @@ def compute_metrics(task_name, preds, labels):
         return {"acc": simple_accuracy(preds, labels)}
     elif task_name == "wsc":
         return {"acc": simple_accuracy(preds, labels)}
+    elif task_name == "weibo":
+        return {"acc": simple_accuracy(preds, labels)}
+    elif task_name == "finance":
+        return {"acc": simple_accuracy(preds, labels)}
     elif task_name == "tnews":
         return {"acc": simple_accuracy(preds, labels)}
     elif task_name == "movie":

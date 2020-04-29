@@ -463,7 +463,44 @@ class SentimentProcessor(DataProcessor):
     def get_labels(self):
         """See base class."""
         labels = []
-        for i in range(1,6):
+        for i in range(0,3):
+            labels.append(str(i))
+        return labels
+
+    def _create_examples(self, lines, set_type):
+        """Creates examples for the training and dev sets."""
+        examples = []
+        for (i, line) in enumerate(lines):
+            guid = "%s-%s" % (set_type, i)
+            text_a = line['comment']
+            text_b = None
+            label = str(line['rating']) if set_type != 'test' else "1"
+            examples.append(
+                InputExample(guid=guid, text_a=text_a, text_b=text_b, label=label))
+        return examples
+
+class WeiboProcessor(DataProcessor):
+    """Processor for the TNEWS data set (CLUE version)."""
+
+    def get_train_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_json(os.path.join(data_dir, "train.json")), "train")
+
+    def get_dev_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_json(os.path.join(data_dir, "dev.json")), "dev")
+
+    def get_test_examples(self, data_dir):
+        """See base class."""
+        return self._create_examples(
+            self._read_json(os.path.join(data_dir, "test.json")), "test")
+
+    def get_labels(self):
+        """See base class."""
+        labels = []
+        for i in range(0,3):
             labels.append(str(i))
         return labels
 
@@ -487,8 +524,10 @@ clue_tasks_num_labels = {
     'wsc': 2,
     'copa': 2,
     'tnews': 15,
-    'restaurant': 5,
-    'movie': 5,
+    'restaurant': 3,
+    'movie': 3,
+    'weibo': 2,
+    'finance':3,
 }
 
 clue_processors = {
@@ -501,6 +540,8 @@ clue_processors = {
     'copa': CopaProcessor,
     'restaurant':SentimentProcessor,
     'movie':SentimentProcessor,
+    'weibo':WeiboProcessor,
+    'finance':WeiboProcessor,
 }
 
 clue_output_modes = {
@@ -513,4 +554,6 @@ clue_output_modes = {
     'copa': "classification",
     'restaurant': "classification",
     'movie': "classification",
+    'weibo': "classification",
+    'finance': "classification",
 }
