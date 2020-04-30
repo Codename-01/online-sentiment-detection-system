@@ -130,3 +130,6 @@ dmypy.json
 
 # data
 OnlineSentimentDetection/data/
+
+# editor
+.DS_Store
