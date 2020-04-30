@@ -15,7 +15,7 @@ MODEL_NAME=albert_${TASK_NAME}
 CURRENT_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 export CUDA_VISIBLE_DEVICES="0"
 
-cd models
+cd models/ALBERT
 echo "Start predict..."
 python3 predict.py \
   --model_type=albert \
