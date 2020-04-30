@@ -10,7 +10,7 @@
 from tensorflow.keras import Input, Model
 from tensorflow.keras.layers import Embedding, Dense, Bidirectional, TimeDistributed, LSTM
 from tensorflow.compat.v1.keras.layers import CuDNNLSTM  # only GPU
-from model.HAN.attention import Attention
+from models.HAN.attention import Attention
 
 
 class HierarchicalAttentionNetworks(Model):

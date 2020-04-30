@@ -12,7 +12,7 @@ from tensorflow.compat.v1.keras.datasets import imdb
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import tensorflow as tf
 from models.HAN.han import HierarchicalAttentionNetworks
-from models.HAN.DataUtil import read_yelp_dataset, read_dp_db_dataset
+from models.HAN.data_helper import read_yelp_dataset, read_dp_db_dataset
 import os
 
 max_features = 5000
