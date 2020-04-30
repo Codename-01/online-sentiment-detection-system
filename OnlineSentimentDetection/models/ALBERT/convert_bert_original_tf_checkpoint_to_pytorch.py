@@ -5,12 +5,11 @@ from __future__ import division
 from __future__ import print_function
 
 import argparse
-import logging
-
 import torch
 
-from OnlineSentimentDetection.models.ALBERT.transformers import BertConfig, BertForPreTraining, load_tf_weights_in_bert
+from transformers import BertConfig, BertForPreTraining, load_tf_weights_in_bert
 
+import logging
 logging.basicConfig(level=logging.INFO)
 
 def convert_tf_checkpoint_to_pytorch(tf_checkpoint_path, bert_config_file, pytorch_dump_path):
