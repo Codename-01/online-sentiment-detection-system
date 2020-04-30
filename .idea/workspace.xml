@@ -2,73 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4953e61d-5b23-4b2a-bef0-db0d24fb928b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/tools/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/predict_restaurant.sh" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/predict_restaurant.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/README.md" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/albert_restaurant/added_tokens.json" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/albert_restaurant/added_tokens.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/albert_restaurant/checkpoint_eval_results.txt" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/albert_restaurant/checkpoint_eval_results.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/albert_restaurant/config.json" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/albert_restaurant/config.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/albert_restaurant/pytorch_model.bin" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/albert_restaurant/pytorch_model.bin" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/albert_restaurant/special_tokens_map.json" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/albert_restaurant/special_tokens_map.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/albert_restaurant/tokenizer_config.json" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/albert_restaurant/tokenizer_config.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/albert_restaurant/training_args.bin" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/albert_restaurant/training_args.bin" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/albert_restaurant/vocab.txt" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/albert_restaurant/vocab.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/convert_albert_original_tf_checkpoint_to_pytorch.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/convert_albert_original_tf_checkpoint_to_pytorch.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/convert_bert_original_tf_checkpoint_to_pytorch.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/convert_bert_original_tf_checkpoint_to_pytorch.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/convert_ernie_original_pad_checkpoint_to_pytorch.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/convert_ernie_original_pad_checkpoint_to_pytorch.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/convert_xlnet_original_tf_checkpoint_to_pytorch.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/convert_xlnet_original_tf_checkpoint_to_pytorch.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/download_clue_data.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/download_clue_data.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/metrics/__init__.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/metrics/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/metrics/clue_compute_metrics.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/metrics/clue_compute_metrics.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/predict.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/predict.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/processors/__init__.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/processors/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/processors/clue.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/processors/clue.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/processors/utils.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/processors/utils.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/run_classifier.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/run_classifier.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/run_classifier_sentiment.sh" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/run_classifier_sentiment.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/tools/common.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/tools/common.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/tools/progressbar.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/tools/progressbar.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/__init__.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/__main__.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/__main__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/configuration_auto.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/configuration_auto.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/configuration_bert.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/configuration_bert.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/configuration_ctrl.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/configuration_ctrl.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/configuration_distilbert.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/configuration_distilbert.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/configuration_gpt2.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/configuration_gpt2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/configuration_openai.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/configuration_openai.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/configuration_roberta.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/configuration_roberta.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/configuration_transfo_xl.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/configuration_transfo_xl.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/configuration_utils.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/configuration_utils.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/configuration_xlm.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/configuration_xlm.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/configuration_xlnet.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/configuration_xlnet.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/file_utils.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/file_utils.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_albert.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_albert.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_auto.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_auto.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_bert.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_bert.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_ctrl.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_ctrl.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_distilbert.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_distilbert.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_gpt2.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_gpt2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_openai.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_openai.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_roberta.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_roberta.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_transfo_xl.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_transfo_xl.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_transfo_xl_utilities.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_transfo_xl_utilities.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_utils.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_utils.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_xlm.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_xlm.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/modeling_xlnet.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_xlnet.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/optimization.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/optimization.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/tokenization_auto.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/tokenization_auto.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/tokenization_bert.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/tokenization_bert.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/tokenization_ctrl.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/tokenization_ctrl.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/tokenization_distilbert.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/tokenization_distilbert.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/tokenization_gpt2.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/tokenization_gpt2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/tokenization_openai.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/tokenization_openai.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/tokenization_roberta.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/tokenization_roberta.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/tokenization_transfo_xl.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/tokenization_transfo_xl.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/tokenization_utils.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/tokenization_utils.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/tokenization_xlm.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/tokenization_xlm.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OnlineSentimentDetection/models/transformers/tokenization_xlnet.py" afterPath="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/tokenization_xlnet.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,14 +13,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="download_clue_data.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/download_clue_data.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="attention.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/attention.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding>
-                <element signature="e#237#246#0" expanded="true" />
+                <element signature="e#121#162#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+              <folding>
+                <element signature="e#121#173#0" expanded="true" />
+                <marker date="1588258635284" expanded="true" signature="1207:2107" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_helper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/data_helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding>
+                <element signature="e#121#132#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="han.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/han.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding>
+                <element signature="e#121#162#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,6 +106,12 @@
         <option value="$PROJECT_DIR$/OnlineSentimentDetection/models/processors/utils.py" />
         <option value="$PROJECT_DIR$/OnlineSentimentDetection/predict_restaurant.sh" />
         <option value="$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/download_clue_data.py" />
+        <option value="$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/attention.py" />
+        <option value="$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/DataUtil.py" />
+        <option value="$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/data_helper.py" />
+        <option value="$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/train.py" />
+        <option value="$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/han.py" />
+        <option value="$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/__init__.py" />
       </list>
     </option>
   </component>
@@ -125,7 +122,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -176,6 +173,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -214,9 +212,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116204694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11727079" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -250,51 +248,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/predict_restaurant.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/trainers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/transformers/modeling_bert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3975">
-          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="500">
-            <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/data/yf_dianping/links.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/data/yf_dianping/ratings.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/data/yf_dianping/restaurants.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="1675">
@@ -550,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/ALBERT/convert_albert_original_tf_checkpoint_to_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -616,6 +562,71 @@
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="e#237#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/DataUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/attention.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#121#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/data_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#121#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/han.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#121#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineSentimentDetection/models/HAN/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="e#121#173#0" expanded="true" />
+            <marker date="1588258635284" expanded="true" signature="1207:2107" ph="..." />
           </folding>
         </state>
       </provider>
