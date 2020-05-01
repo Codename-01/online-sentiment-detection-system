@@ -32,11 +32,9 @@ pip install transformers -i https://mirrors.aliyun.com/pypi/simple/
 {"index":1,"comment":"太好吃了，我吃了这么多年日料，这是我吃过的最好吃的一次"}
 {"index":2,"comment":"一般一般，在同等档次的餐厅中中规中举吧"}
 ```
-4. 运行predict_restaurant.sh
+4. 针对四种场景我们训练了四个不同的模型 restaurant movie finance weibo
+5. 运行predict.sh
 ```
-bash predict_restaurant.sh
+bash predict.sh <task-name> 
 ```
-
-#### 后续改进
-1. 预测结果存储于data/restaurant/test_prediction.json中
-2. 后续可能会针对四种场景训练四个不同的模型，当前只做了restaurant的模型，保存在models/albert_restaurant中，后续模型需要和它平行放置
+6. 需要预测的数据放在data/\*/test.json中，预测结果存储于data/\*/test_prediction.json中，label的意义放在data/\*/labels.json中

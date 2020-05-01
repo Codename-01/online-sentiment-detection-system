@@ -8,16 +8,16 @@ from __future__ import absolute_import, division, print_function
 import argparse
 import os
 import torch
-from .transformers import (WEIGHTS_NAME, BertConfig,
+from transformers import (WEIGHTS_NAME, BertConfig,
                           BertForSequenceClassification, BertTokenizer,
                           RobertaConfig, XLNetConfig,
                           XLNetForSequenceClassification,
                           XLNetTokenizer,
                           AlbertForSequenceClassification)
 
-from .processors import clue_output_modes as output_modes
-from .processors import clue_processors as processors
-from .run_classifier import predict
+from processors import clue_output_modes as output_modes
+from processors import clue_processors as processors
+from run_classifier import predict
 
 ALL_MODELS = sum((tuple(conf.pretrained_config_archive_map.keys()) for conf in (BertConfig, XLNetConfig,
                                                                                 RobertaConfig)), ())
