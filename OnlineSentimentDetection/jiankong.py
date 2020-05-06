@@ -1,36 +1,19 @@
+# -*-coding:utf-8 -*-
+
+'''
+@File       : jiankong.py
+@Author     : W Li, TY Liu
+@Date       : 2020/5/1
+@Desc       : 项目后台服务
+'''
 from flask import Flask, render_template, request, jsonify
 import time, pymysql
+from database import data_util
+from predictors.predictor import Predictor
+from models.BiLSTM.bilstm import BiLSTM
+import os
 
 app = Flask(__name__)
-
-def get_conn():
-    # 建立连接
-    conn = pymysql.connect(host="localhost", user="root", password="###", db="monitor", charset="utf8")
-    # c创建游标A
-    cursor = conn.cursor()
-    return conn, cursor
-
-
-def close_conn(conn, cursor):
-    if cursor:
-        cursor.close()
-    if conn:
-        conn.close()
-
-def query(sql,*args):
-    """
-
-    :param sql:
-    :param args:
-    :return:
-    """
-    conn,cursor = get_conn()
-    cursor.execute(sql,args)
-    res = cursor.fetchall()
-    close_conn(conn,cursor)
-    return res
-
-
 
 @app.route('/')
 def index():
@@ -46,28 +29,28 @@ def get_time():
 @app.route('/u1')
 def get_u1_data():
     sql = "select 正面,负面,中性 from pie where 来源='微信'"
-    data = query(sql)
+    data = data_util.query(sql)
     jj = jsonify({"pos":data[0][0],"neg":data[0][1],"neu":data[0][2]})
     return jj
 
 @app.route('/u2')
 def get_u2_data():
     sql = "select 正面,负面,中性 from pie where 来源='微博'"
-    data = query(sql)
+    data = data_util.query(sql)
     jj = jsonify({"pos":data[0][0],"neg":data[0][1],"neu":data[0][2]})
     return jj
 
 @app.route('/u3')
 def get_u3_data():
     sql = "select 正面,负面,中性 from pie where 来源='美团'"
-    data = query(sql)
+    data = data_util.query(sql)
     jj = jsonify({"pos":data[0][0],"neg":data[0][1],"neu":data[0][2]})
     return jj
 
 @app.route('/d1')
 def get_d1_data():
     sql = "select 项目,数量 from bar where 平台='资讯'"
-    da = list(query(sql))
+    da = list(data_util.query(sql))
     data = sorted(da, key = lambda k: k[1], reverse=True)[:5]
     xm = []
     sl = []
@@ -80,7 +63,7 @@ def get_d1_data():
 @app.route('/d2')
 def get_d2_data():
     sql = "select 项目,数量 from bar where 平台='口碑'"
-    da = list(query(sql))
+    da = list(data_util.query(sql))
     data = sorted(da, key = lambda k: k[1], reverse=True)[:5]
     xm = []
     sl = []
@@ -91,6 +74,26 @@ def get_d2_data():
     return jj
 
 if __name__ == '__main__':
+    # TODO 准备项目启动参数
+
+    # 启动爬虫
+    # TODO 测试
+    crawler_run_cmd = 'python ./spider/meituan_comments/run.py'
+    # os.system(crawler_path)
+    os.popen(crawler_path)
+
+    # 准备模型
+    # TODO 多模型
+    weights_path = "./bilstm_weights"
+    lstm = BiLSTM()
+    lstm.load_weights(weights_path)
+    models = [lstm]
+
+    # 启动预测任务
+    pred = Predictor(100, models)
+    pred.predict()
+
+    # 启动flask
     app_ctx = app.app_context()
     app_ctx.push()
     #print(get_d1_data())
